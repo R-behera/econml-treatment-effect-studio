@@ -1,0 +1,116 @@
+{
+  "slug": "econml-treatment-effect-studio",
+  "title": "EconML Treatment Effect Studio",
+  "project_type": "analytics",
+  "domain": "Heterogeneous Treatment Effects",
+  "summary": "Build a treatment-effect studio that turns uplift heterogeneity into targeting strategy, policy summaries, and intervention recommendations.",
+  "tags": [
+    "econml",
+    "causal",
+    "uplift",
+    "experimentation"
+  ],
+  "accent": "#a9c82c",
+  "secondary_accent": "#49a92c",
+  "dashboard_metrics": [
+    {
+      "label": "North Star",
+      "value": "84",
+      "delta": "+7.1%"
+    },
+    {
+      "label": "Variance",
+      "value": "8%",
+      "delta": "-1.8%"
+    },
+    {
+      "label": "Decision Cycle",
+      "value": "3d",
+      "delta": "-0.5d"
+    }
+  ],
+  "sample_features": {
+    "current_conversion": 0.15,
+    "baseline_conversion": 0.12,
+    "volume": 3025,
+    "segment": "new_users"
+  },
+  "sample_metrics": {
+    "acquisition": 71.7,
+    "activation": 62.5,
+    "retention": 70.4,
+    "revenue": 124.9
+  },
+  "knowledge_base": [
+    "EconML Treatment Effect Studio is positioned as a Heterogeneous Treatment Effects starter that emphasizes fast iteration, clear documentation, and production-friendly interfaces.",
+    "The primary value proposition is: Build a treatment-effect studio that turns uplift heterogeneity into targeting strategy, policy summaries, and intervention recommendations.",
+    "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.",
+    "Typical stakeholders include analytics, operations, product, and leadership teams working on econml, causal, uplift, experimentation.",
+    "Source paper: EconML",
+    "Official repo: https://github.com/py-why/EconML",
+    "Production differentiation focus: Translate upstream heterogeneous treatment effects logic into stakeholder-ready dashboards, memos, and scenario controls.; Add reproducible docs, deployment-ready structure, and polished collateral for GitHub and LinkedIn.; Make the core decisions easier to interpret for product, finance, and operations partners."
+  ],
+  "research_key": "econml-treatment-effect-studio",
+  "research_score": 9.675,
+  "paper_title": "EconML",
+  "paper_url": "https://github.com/py-why/EconML",
+  "repo_url": "https://github.com/py-why/EconML",
+  "repo_org": "py-why",
+  "why_high_score": [
+    "Official or primary upstream repo with 4593 GitHub stars.",
+    "Active maintenance signal with recent push at 2026-04-13T18:29:12Z.",
+    "ALICE (Automated Learning and Intelligence for Causation and Economics) is a Microsoft Research project aimed at applying Artificial Intelligence concepts to economic decision making. One of its  goals is to build a toolkit that combines state-of-the-art machine learning techniques with econometrics in order to bring automation to complex causal inference problems. To date, the ALICE Python SDK (econml) implements orthogonal machine learning algorithms such as the double machine learning work of Chernozhukov et al. This toolkit is designed to measure the causal effect of some treatment variable(s) t on an outcome variable y, controlling for a set of features x."
+  ],
+  "differentiation_hooks": [
+    "Translate upstream heterogeneous treatment effects logic into stakeholder-ready dashboards, memos, and scenario controls.",
+    "Add reproducible docs, deployment-ready structure, and polished collateral for GitHub and LinkedIn.",
+    "Make the core decisions easier to interpret for product, finance, and operations partners."
+  ],
+  "app_archetype": "studio",
+  "ui_profile": {
+    "layout": "horizon",
+    "surface": "sand",
+    "font_stack": "\"Avenir Next\", \"Segoe UI\", sans-serif",
+    "radius": 22,
+    "shadow": 58,
+    "eyebrow_style": "soft",
+    "module_columns": 2,
+    "hero_align": "left",
+    "headline_mode": "compact"
+  },
+  "app_modules": [
+    {
+      "label": "Studio 01",
+      "title": "Opportunity Scorecard",
+      "description": "Score the current opportunity shape before deciding what to prioritize next.",
+      "endpoint": "/score",
+      "input_mode": "json",
+      "cta": "Score Opportunity",
+      "prefill": "{\n  \"features\": {\n    \"current_conversion\": 0.15,\n    \"baseline_conversion\": 0.12,\n    \"volume\": 3025,\n    \"segment\": \"new_users\"\n  }\n}",
+      "hint": "Opportunity score and top factors will appear here.",
+      "span": "normal"
+    },
+    {
+      "label": "Studio 02",
+      "title": "Metric Storyline",
+      "description": "Translate KPI movement into a concise summary for product, growth, or finance stakeholders.",
+      "endpoint": "/analyze",
+      "input_mode": "json",
+      "cta": "Summarize Metrics",
+      "prefill": "{\n  \"metrics\": {\n    \"acquisition\": 71.7,\n    \"activation\": 62.5,\n    \"retention\": 70.4,\n    \"revenue\": 124.9\n  },\n  \"baseline\": {\n    \"acquisition\": 65.96,\n    \"activation\": 57.5,\n    \"retention\": 64.77,\n    \"revenue\": 114.91\n  }\n}",
+      "hint": "Metric storyline summary will appear here.",
+      "span": "wide"
+    },
+    {
+      "label": "Studio 03",
+      "title": "Decision Memo",
+      "description": "Generate the next action memo grounded in the project-specific context.",
+      "endpoint": "/recommend",
+      "input_mode": "json",
+      "cta": "Draft Memo",
+      "prefill": "{\n  \"prompt\": \"Recommend the next best action for EconML Treatment Effect Studio.\",\n  \"features\": {\n    \"current_conversion\": 0.15,\n    \"baseline_conversion\": 0.12,\n    \"volume\": 3025,\n    \"segment\": \"new_users\"\n  },\n  \"metrics\": {\n    \"acquisition\": 71.7,\n    \"activation\": 62.5,\n    \"retention\": 70.4,\n    \"revenue\": 124.9\n  }\n}",
+      "hint": "Decision memo will appear here.",
+      "span": "normal"
+    }
+  ]
+}
