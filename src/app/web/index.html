@@ -1,112 +1,29 @@
-
-        <!doctype html>
-        <html lang="en">
-        <head>
-          <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <title>EconML Treatment Effect Studio</title>
-          <link rel="stylesheet" href="./styles.css">
-        </head>
-        <body class="surface-sand">
-          <div class="page layout-horizon eyebrow-soft headline-compact modules-2 hero-align-left">
-            <section class="hero">
-              <div class="panel hero-copy">
-                <span class="eyebrow" data-health>Analytics Studio</span>
-                <h1 id="project-title">EconML Treatment Effect Studio</h1>
-                <p id="project-summary" class="lead">Build a treatment-effect studio that turns uplift heterogeneity into targeting strategy, policy summaries, and intervention recommendations.</p>
-                <ul id="project-tags" class="tag-list">
-                  <li>econml</li><li>causal</li><li>uplift</li><li>experimentation</li>
-                </ul>
-              </div>
-              <div class="panel hero-side">
-                <div class="metric-grid">
-                  <article class='card'><span>North Star</span><strong>84</strong><em>+7.1%</em></article>
-<article class='card'><span>Variance</span><strong>8%</strong><em>-1.8%</em></article>
-<article class='card'><span>Decision Cycle</span><strong>3d</strong><em>-0.5d</em></article>
-                </div>
-                <div class="mini-grid">
-                  <article class='mini-card'><span>Project Type</span><strong>ANALYTICS</strong></article><article class='mini-card'><span>Domain</span><strong>Heterogeneous Treatment Effects</strong></article><article class='mini-card'><span>Application</span><strong>Analytics Studio</strong></article><article class='mini-card'><span>Deployment</span><strong>Docker + CI</strong></article>
-                </div>
-              </div>
-            </section>
-            <section class="app-grid">
-              <article class="panel module js-module span-normal">
-          <div class="module-header">
-            <span>Studio 01</span>
-            <h2>Opportunity Scorecard</h2>
-            <p>Score the current opportunity shape before deciding what to prioritize next.</p>
-          </div>
-          <textarea class="js-input">{
-  &quot;features&quot;: {
-    &quot;current_conversion&quot;: 0.15,
-    &quot;baseline_conversion&quot;: 0.12,
-    &quot;volume&quot;: 3025,
-    &quot;segment&quot;: &quot;new_users&quot;
-  }
-}</textarea>
-          <div class="button-row">
-            <button class="js-run" data-endpoint="/score" data-input-mode="json">Score Opportunity</button>
-          </div>
-          <pre class="js-output">Opportunity score and top factors will appear here.</pre>
-        </article>
-<article class="panel module js-module span-wide">
-          <div class="module-header">
-            <span>Studio 02</span>
-            <h2>Metric Storyline</h2>
-            <p>Translate KPI movement into a concise summary for product, growth, or finance stakeholders.</p>
-          </div>
-          <textarea class="js-input">{
-  &quot;metrics&quot;: {
-    &quot;acquisition&quot;: 71.7,
-    &quot;activation&quot;: 62.5,
-    &quot;retention&quot;: 70.4,
-    &quot;revenue&quot;: 124.9
-  },
-  &quot;baseline&quot;: {
-    &quot;acquisition&quot;: 65.96,
-    &quot;activation&quot;: 57.5,
-    &quot;retention&quot;: 64.77,
-    &quot;revenue&quot;: 114.91
-  }
-}</textarea>
-          <div class="button-row">
-            <button class="js-run" data-endpoint="/analyze" data-input-mode="json">Summarize Metrics</button>
-          </div>
-          <pre class="js-output">Metric storyline summary will appear here.</pre>
-        </article>
-<article class="panel module js-module span-normal">
-          <div class="module-header">
-            <span>Studio 03</span>
-            <h2>Decision Memo</h2>
-            <p>Generate the next action memo grounded in the project-specific context.</p>
-          </div>
-          <textarea class="js-input">{
-  &quot;prompt&quot;: &quot;Recommend the next best action for EconML Treatment Effect Studio.&quot;,
-  &quot;features&quot;: {
-    &quot;current_conversion&quot;: 0.15,
-    &quot;baseline_conversion&quot;: 0.12,
-    &quot;volume&quot;: 3025,
-    &quot;segment&quot;: &quot;new_users&quot;
-  },
-  &quot;metrics&quot;: {
-    &quot;acquisition&quot;: 71.7,
-    &quot;activation&quot;: 62.5,
-    &quot;retention&quot;: 70.4,
-    &quot;revenue&quot;: 124.9
-  }
-}</textarea>
-          <div class="button-row">
-            <button class="js-run" data-endpoint="/recommend" data-input-mode="json">Draft Memo</button>
-          </div>
-          <pre class="js-output">Decision memo will appear here.</pre>
-        </article>
-            </section>
-            <footer class="footer">
-              <span>Heterogeneous Treatment Effects • ANALYTICS • Analytics Studio</span>
-              <span>econml-treatment-effect-studio</span>
-            </footer>
-          </div>
-          <script id="bootstrap-data" type="application/json">{"project": {"slug": "econml-treatment-effect-studio", "title": "EconML Treatment Effect Studio", "project_type": "analytics", "domain": "Heterogeneous Treatment Effects", "summary": "Build a treatment-effect studio that turns uplift heterogeneity into targeting strategy, policy summaries, and intervention recommendations.", "tags": ["econml", "causal", "uplift", "experimentation"]}, "app_archetype": "studio", "ui_profile": {"layout": "horizon", "surface": "sand", "font_stack": "\"Avenir Next\", \"Segoe UI\", sans-serif", "radius": 22, "shadow": 58, "eyebrow_style": "soft", "module_columns": 2, "hero_align": "left", "headline_mode": "compact"}, "app_modules": [{"label": "Studio 01", "title": "Opportunity Scorecard", "description": "Score the current opportunity shape before deciding what to prioritize next.", "endpoint": "/score", "input_mode": "json", "cta": "Score Opportunity", "prefill": "{\n  \"features\": {\n    \"current_conversion\": 0.15,\n    \"baseline_conversion\": 0.12,\n    \"volume\": 3025,\n    \"segment\": \"new_users\"\n  }\n}", "hint": "Opportunity score and top factors will appear here.", "span": "normal"}, {"label": "Studio 02", "title": "Metric Storyline", "description": "Translate KPI movement into a concise summary for product, growth, or finance stakeholders.", "endpoint": "/analyze", "input_mode": "json", "cta": "Summarize Metrics", "prefill": "{\n  \"metrics\": {\n    \"acquisition\": 71.7,\n    \"activation\": 62.5,\n    \"retention\": 70.4,\n    \"revenue\": 124.9\n  },\n  \"baseline\": {\n    \"acquisition\": 65.96,\n    \"activation\": 57.5,\n    \"retention\": 64.77,\n    \"revenue\": 114.91\n  }\n}", "hint": "Metric storyline summary will appear here.", "span": "wide"}, {"label": "Studio 03", "title": "Decision Memo", "description": "Generate the next action memo grounded in the project-specific context.", "endpoint": "/recommend", "input_mode": "json", "cta": "Draft Memo", "prefill": "{\n  \"prompt\": \"Recommend the next best action for EconML Treatment Effect Studio.\",\n  \"features\": {\n    \"current_conversion\": 0.15,\n    \"baseline_conversion\": 0.12,\n    \"volume\": 3025,\n    \"segment\": \"new_users\"\n  },\n  \"metrics\": {\n    \"acquisition\": 71.7,\n    \"activation\": 62.5,\n    \"retention\": 70.4,\n    \"revenue\": 124.9\n  }\n}", "hint": "Decision memo will appear here.", "span": "normal"}], "sample_features": {"current_conversion": 0.15, "baseline_conversion": 0.12, "volume": 3025, "segment": "new_users"}, "sample_metrics": {"acquisition": 71.7, "activation": 62.5, "retention": 70.4, "revenue": 124.9}, "knowledge_base": ["EconML Treatment Effect Studio is positioned as a Heterogeneous Treatment Effects starter that emphasizes fast iteration, clear documentation, and production-friendly interfaces.", "The primary value proposition is: Build a treatment-effect studio that turns uplift heterogeneity into targeting strategy, policy summaries, and intervention recommendations.", "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.", "Typical stakeholders include analytics, operations, product, and leadership teams working on econml, causal, uplift, experimentation.", "Source paper: EconML", "Official repo: https://github.com/py-why/EconML", "Production differentiation focus: Translate upstream heterogeneous treatment effects logic into stakeholder-ready dashboards, memos, and scenario controls.; Add reproducible docs, deployment-ready structure, and polished collateral for GitHub and LinkedIn.; Make the core decisions easier to interpret for product, finance, and operations partners."], "dashboard_metrics": [{"label": "North Star", "value": "84", "delta": "+7.1%"}, {"label": "Variance", "value": "8%", "delta": "-1.8%"}, {"label": "Decision Cycle", "value": "3d", "delta": "-0.5d"}]}</script>
-          <script src="./app.js"></script>
-        </body>
-        </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EconML Treatment Effect Studio App</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <div id="scene" class="app-scene">
+    <header class="shell hero">
+      <div>
+        <span class="eyebrow">Applied AI product systems</span>
+        <h1>EconML Treatment Effect Studio</h1>
+        <p>![Demo Screenshot](demo/screenshot.png)</p>
+      </div>
+      <aside class="status-card">
+        <div class="pill">API connected</div>
+        <div class="pill">operations lead</div>
+        <div class="pill">glass-atlas</div>
+      </aside>
+    </header>
+    <section id="metrics" class="grid metrics"></section>
+    <section id="signals" class="grid signals"></section>
+  </div>
+  <script>window.PROJECT_MANIFEST = {"slug": "econml-treatment-effect-studio", "title": "EconML Treatment Effect Studio", "summary": "![Demo Screenshot](demo/screenshot.png)", "domain": "Applied AI product systems", "audience": "operations lead", "promise": "Turn promising technical capability into a production-shaped workflow for real teams.", "hero": ["Production-grade app scaffold with API, CI, tests, Docker, and GitHub Pages landing.", "3D landing surface designed for GitHub Pages and recruiter-friendly storytelling.", "App backend structured for local or container deployment without changing the product narrative."], "kpis": [{"label": "Workflow clarity", "value": "88%", "note": "Operator actions mapped to product stages"}, {"label": "Deployment posture", "value": "API + Docker", "note": "Local and containerized startup paths"}, {"label": "Presentation layer", "value": "3D Pages ready", "note": "Static GitHub landing page included"}], "stages": ["ingest", "validate", "analyze", "decide", "monitor"], "cards": [{"title": "Operator cockpit", "body": "One-screen surface for the operations lead to understand what matters first."}, {"title": "API contract", "body": "Structured endpoints for health, manifest, readiness, and showcase data."}, {"title": "Deployment path", "body": "Repository includes Docker, Compose, CI workflow, and a Pages-ready landing surface."}], "scene": "glass-atlas", "theme": {"bg": "#10070a", "surface": "#1b1116", "ink": "#fff2ec", "muted": "#c7a49b", "accent": "#ff8b61", "accent2": "#ffd166"}, "pages_url": "https://r-behera.github.io/econml-treatment-effect-studio/", "api_examples": {"health": {"status": "ok", "project": "econml-treatment-effect-studio"}, "readiness": {"api": "ready", "landing_page": "docs/index.html", "container": "Dockerfile present"}, "signals": [{"name": "Decision coverage", "status": "strong", "detail": "App and landing narrative aligned"}, {"name": "Operator context", "status": "strong", "detail": "Primary user anchored as operations lead"}, {"name": "Delivery path", "status": "ready", "detail": "Pages + containerized app scaffold generated"}]}};</script>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
